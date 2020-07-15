@@ -10,6 +10,15 @@ export class Provider extends Component {
         ],
         heading: 'Top 10 Tracks'
     }
+
+    componentDidMount() {
+        axios.get()
+            .then( res=> {
+                console.log(red.data);
+                this.setState({track_list: res.data.message.body});
+            })
+            .catch( err => console.log(err));
+    }
     render() {
         return (
            <Context.Provider value={this.state}>
