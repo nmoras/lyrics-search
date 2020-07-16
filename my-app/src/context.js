@@ -14,7 +14,7 @@ export class Provider extends Component {
     componentDidMount() {
         axios.get()
             .then( res=> {
-                console.log(red.data);
+                console.log(res.data);
                 this.setState({track_list: res.data.message.body});
             })
             .catch( err => console.log(err));

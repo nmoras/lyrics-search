@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Consumer } from '../../context';
+import Track from './Track';
 
 
 class Tracks extends Component {
