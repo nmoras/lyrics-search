@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Context } from '../../context';
 import Track from './Track';
 import Spinner from '../layout/Spinner';
+import Search from './Search';
 
 
 const Tracks = () => {
@@ -9,7 +10,12 @@ const Tracks = () => {
     const { track_list, heading } = state;
 
     if (track_list === undefined || track_list.length === 0){
-        return <Spinner />
+        return (
+            <>
+                <Search />
+                <Spinner />
+            </>    
+        )
     } else {
         return (
             <>

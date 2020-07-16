@@ -20,7 +20,7 @@ useEffect( () => {
         }`
     )
         .then( res=> {
-        console.log(res.data);
+        
         setState({
             track_list: res.data.message.body.track_list,
             heading: "Top 10 Tracks"
