@@ -5,11 +5,15 @@ const Search = () => {
     const[state, setState] = useContext(Context)
     const[userInput, setUserInput] = useState( '' ) 
     return (
-        <div>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        <div >
+            <form>
+                <div className="input-group">
+                    <input type="text" class="form-control" placeholder="Search Lyrics"/>
+                    <div className="input-group-append">
+                        <button className="btn btn-outline-primary" type="button">Search</button>
+                    </div>
+                </div>
+            </form>  
             
         </div>
     )
