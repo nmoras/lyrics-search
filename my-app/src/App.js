@@ -13,9 +13,9 @@ function App() {
      <React.Fragment>
         <Navbar />
         <div className="container">
-          <Switch>
+          
             <Route exact path="/" component={Index} />
-          </Switch>
+         
         </div>
      </React.Fragment>
    </Router> 
