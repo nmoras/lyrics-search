@@ -6,7 +6,7 @@ export const Context = React.createContext();
 //don't want to send class as default becuase we are exporting consumer
 
 export function ContextController({ children }){
-    let intialState = {
+    let initialState = {
         track_list: [],
         heading: ''
     };
