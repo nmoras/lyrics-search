@@ -8,6 +8,10 @@ const Navbar = () => {
             <Link to="/" className="navbar-brand">
                 Lyric Search
             </Link>
+            <Link to="/lyrics" className="navbar-brand">
+                Lyrics
+            </Link>
+
 
         </nav>
     )

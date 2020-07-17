@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Index from './components/layout/Index';
 import { ContextController } from './context';
-import Lyrics from './components/layout/Lyrics';
+import Lyrics from './components/tracks/Lyrics';
+
 
 
 
@@ -16,7 +17,8 @@ function App() {
         <Navbar />
         <div className="container">        
             <Route exact path="/" component={Index} />
-            <Route path="lyrics/track/:id" component={Lyrics} />      
+            <Route  exact path="/lyrics/track/:id" component={Lyrics} />   
+            {/* <Route path="/lyrics" component={Lyrics}   />  */}
         </div>
      </>
    </Router> 

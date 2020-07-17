@@ -12,8 +12,7 @@ const Search = () => {
     useEffect( () => {
         axios
             .get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${trackName}&
-            page_size=10&country=us&f_has_lyrics=1&apikey=${process.env.REACT_APP_MM_KEY
-            }`
+            page_size=10&country=us&f_has_lyrics=1&apikey=`
         )
             .then( res=> { 
                 setState({

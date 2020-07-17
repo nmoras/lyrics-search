@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Track = (props) => {
-    console.log(props)
+    console.log('the props are',props)
     const { track } = props;
 
     return (
@@ -15,8 +15,10 @@ const Track = (props) => {
                         <br/>
                         <strong><i className="fas fa-play"></i>Track</strong>: {track.track_name}
                     </p>
-                    <Link to={`lyrics/track/${track.track_id}`} className="btn btn-dark btn-block" >
-                        <i className="fas fa-chevron-right"></i>View Lyrics
+                    <Link to={`/lyrics/track/${track.track_id}`}
+                            className="btn btn-dark btn-block" >
+                            <i className="fas fa-chevron-right" />
+                            View Lyrics
                     </Link>
                 </div>
             </div>
