@@ -8,9 +8,7 @@ import Search from './Search';
 const Tracks = () => {
     const [state] = useContext(Context)
     const { track_list, heading } = state;
-    
-
-    console.log('the track list', track_list)
+    // console.log('the track list', track_list)
     if (track_list === undefined || track_list.length === 0){
         return (
             <>

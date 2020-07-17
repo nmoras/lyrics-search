@@ -7,7 +7,6 @@ const Search = () => {
     const[state, setState] = useContext(Context)
     const[userInput, setUserInput] = useState( '' ) 
     const[ trackName, setTrackName] = useState('')
-
     // console.log('the user input is', userInput)
     useEffect( () => {
         axios
@@ -15,10 +14,12 @@ const Search = () => {
             page_size=10&country=us&f_has_lyrics=1&apikey=`
         )
             .then( res=> { 
+                
                 setState({
                     track_list: res.data.message.body.track_list,
                     heading: "Top 10 Tracks"
                 });
+                console.log('the state is', state)
         })
         .catch( err => console.log(err));  
     }, [trackName]);

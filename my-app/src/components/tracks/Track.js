@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Track = (props) => {
-    console.log('the props are',props)
+    // console.log('the props are',props)
     const { track } = props;
 
     return (

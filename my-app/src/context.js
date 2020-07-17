@@ -17,7 +17,7 @@ useEffect( () => {
 
     axios
         .get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&
-        page_size=10&country=us&f_has_lyrics=1&apikey=bec11b6399715971e91e5901a2e7dd9f`
+        page_size=10&country=us&f_has_lyrics=1&apikey=`
     )
         .then( res => { 
             // console.log('the data is', res.data)
@@ -31,7 +31,7 @@ useEffect( () => {
 
 
 return (
-    <Context.Provider value={[state]}>{children}</Context.Provider>
+    <Context.Provider value={[state, setState]}>{children}</Context.Provider>
 );
 
 }
