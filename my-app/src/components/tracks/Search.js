@@ -16,10 +16,10 @@ const Search = () => {
             }`
         )
             .then( res=> { 
-            setState({
-                track_list: res.data.message.body.track_list,
-                heading: "Top 10 Tracks"
-            });
+                setState({
+                    track_list: res.data.message.body.track_list,
+                    heading: "Top 10 Tracks"
+                });
         })
         .catch( err => console.log(err));  
     }, [trackName]);
