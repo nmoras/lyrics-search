@@ -13,7 +13,7 @@ const Track = (props) => {
                     <p className="card-text">
                         <strong><i className="fas fa-play"></i>Track</strong>: {track.track_name}
                         <br/>
-                        <strong><i className="fas fa-play"></i>Track</strong>: {track.track_name}
+                        <strong><i className="fas fa-play"></i>Artist</strong>: {track.artist_name}
                     </p>
                     <Link to={`/lyrics/track/${track.track_id}`}
                             className="btn btn-dark btn-block" >
